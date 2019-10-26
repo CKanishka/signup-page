@@ -1,0 +1,42 @@
+<html>
+  <head>
+  <title>Signup Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="intro-text">
+        <h1>Built for dreamers</h1>
+        <p class="descr">Tech School is a learning platform dedicated to provide you the right boost and suppport required to start an amazing software development career. Enroll now and pay only after you get your dream job.</p>
+      </div>
+      <div class="signup">
+        <form class="form-signup" name="signup-form" action="success.html" onsubmit="return validate();">
+          <label>Firstname</label><input id="f-name" name="f-name" type="text" class="form-input"><br/>
+          <div class="error-message" id="f-name-error"></div>
+          <label>Lastname</label><input id="l-name" name="l-name" type="text" class="form-input"><br/>
+          <div class="error-message" id="l-name-error"></div>
+          <label>Email</label><input name="email" type="email" class="form-input"><br/>
+          <div class="error-message" id="email-error"></div>
+          <label>Phone</label><input id="phone" name="phone" type="number" class="form-input"><br/>
+          <div class="error-message" id="phone-error"></div>
+          <label>Gender</label><input type="radio" name="gender" value="male" checked> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="other"> Other <br/>
+          <label>Age</label><input id="age" type="number" name="age" class="form-input"><br/>
+          <div class="error-message" id="age-error"></div>
+          <label> Country</label><select id='country_select' name="country" form="signup-form" class="form-input">
+                                 <option value=""> - Select - </option>
+                                 <option value="India">India</option>
+                                 <option value="USA">USA</option>
+                                 <option value="China">China</option>
+                                 <option value="Japan">Japan</option>
+                                 <option value="England">England</option>
+                          </select><br /><br />
+          <input class="submit-button" type="submit" value="Sign up">
+        </form><br />
+       <p>By clicking Sign up, you agree to our Terms of Service and Privacy Statement. We'll occasionally send you account related emails.</p>
+      </div>
+    <div>
+    <script src="scripts.js" type="text/javascript"></script>
+  </body>
+</html>
